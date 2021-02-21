@@ -19,13 +19,20 @@ class _QuizState extends State<Quiz> {
       listaResultado.add(ItemResultado(i, widget));
     }
     */
-    listaResultado = List.filled(
+    listaResultado = List.generate(
       widget.perguntas.length,
-      Padding(
+      (indexList) => Padding(
         padding: EdgeInsets.all(8.0),
-        child: Icon(
-          Icons.fiber_manual_record,
-          color: Colors.grey,
+        child: IconButton(
+          icon: Icon(
+            Icons.fiber_manual_record,
+            color: Colors.grey,
+          ),
+          onPressed: () {
+            setState(() {
+              widget.index = indexList;
+            });
+          },
         ),
       ),
     );
