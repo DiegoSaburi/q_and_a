@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
             Pergunta("Nat tem voz de criança?", true),
             Pergunta("Tanque de guerra tem buzina?", false),
             Pergunta("Comi o cu de quem ta lendo", true),
-            Pergunta("Tanque de guerra tem buzina?", false),
+            Pergunta("Saburi é um gostoso?", true),
             Pergunta("Tanque de guerra tem buzina?", false),
             Pergunta("Tanque de guerra tem buzina?", false),
             Pergunta("Tanque de guerra tem buzina?", false),
