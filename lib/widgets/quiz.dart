@@ -36,15 +36,6 @@ class _QuizState extends State<Quiz> {
         ),
       ),
     );
-    // listaResultado = listaResultado
-    //     .map((item) => IconButton(
-    //           icon: Icon(
-    //             Icons.fiber_manual_record,
-    //             color: Colors.grey,
-    //           ),
-    //           onPressed: () {},
-    //         ))
-    //     .toList();
   }
 
   @override
