@@ -14,13 +14,13 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.grey[900],
         body: Quiz(
           perguntas: [
-            Pergunta("Sua idade é maior que 5?", false),
+            Pergunta("pergunta?", false),
             Pergunta("Avatar é Hétero?", true),
             Pergunta("Vini é um arrombado?", true),
             Pergunta("Nat tem voz de criança?", true),
             Pergunta("Tanque de guerra tem buzina?", false),
             Pergunta("Comi o cu de quem ta lendo", true),
-            Pergunta("Saburi é um gostoso?", true),
+            Pergunta("pergunta?", true),
             Pergunta("Tanque de guerra tem buzina?", false),
             Pergunta("Tanque de guerra tem buzina?", false),
             Pergunta("Tanque de guerra tem buzina?", false),

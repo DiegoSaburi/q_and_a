@@ -21,19 +21,16 @@ class _QuizState extends State<Quiz> {
     */
     listaResultado = List.generate(
       widget.perguntas.length,
-      (indexList) => Padding(
-        padding: EdgeInsets.all(8.0),
-        child: IconButton(
-          icon: Icon(
-            Icons.fiber_manual_record,
-            color: Colors.grey,
-          ),
-          onPressed: () {
-            setState(() {
-              widget.index = indexList;
-            });
-          },
+      (indexList) => IconButton(
+        icon: Icon(
+          Icons.fiber_manual_record,
+          color: Colors.grey,
         ),
+        onPressed: () {
+          setState(() {
+            widget.index = indexList;
+          });
+        },
       ),
     );
   }
@@ -150,20 +147,20 @@ class _QuizState extends State<Quiz> {
 
   void checkResposta(bool tentativa, Pergunta pergunta) {
     if (tentativa == pergunta.getResposta()) {
-      listaResultado[widget.index] = Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Icon(
+      listaResultado[widget.index] = IconButton(
+        icon: Icon(
           Icons.check,
           color: Colors.green,
         ),
+        onPressed: () {},
       );
     } else {
-      listaResultado[widget.index] = Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Icon(
+      listaResultado[widget.index] = IconButton(
+        icon: Icon(
           Icons.close,
           color: Colors.red,
         ),
+        onPressed: () {},
       );
     }
   }
